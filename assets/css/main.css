@@ -3243,6 +3243,16 @@ input, select, textarea {
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    #wrapper > .bg {
+        background-image: url("../../images/overlay.png"),
+                          linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                          url("../../images/bg-mobile.JPG"); /* Mobile-specific background image */
+        background-size: auto, auto, cover; /* Adjust size if needed */
+        background-position: center, center, center center; /* Center the mobile image */
+    }
+}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
